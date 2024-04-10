@@ -23,8 +23,18 @@ def encode(password):
             encoded += "2"
     return (encoded)
 
-def decode():
-    return None
+
+def decode(n):
+    decoded = []
+    for number in str(n):
+        number = int(number) - 3
+        if number >= 10:
+            decoded.append(number - 10)
+        else:
+            decoded.append(number)
+    return decoded
+
+
 def main():
 
     while True:
@@ -38,7 +48,7 @@ def main():
             print("Your password has been encoded and stored!\n")
 
         if option == 2:
-            decode()
+            print(f"The decoded password is {encoded_password}, and the original password is {encode(password)}.")
 
         if option == 3:
             break
