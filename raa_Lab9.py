@@ -48,7 +48,7 @@ def main():
             print("Your password has been encoded and stored!\n")
 
         if option == 2:
-            print(f"The decoded password is {encoded_password}, and the original password is {encode(password)}.")
+            print(f"The decoded password is {encoded_password}, and the original password is {password}.")
 
         if option == 3:
             break
